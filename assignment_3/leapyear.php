@@ -15,6 +15,13 @@ include __DIR__ . '/tpl/body_start.php';
 ?>
 <div class="row">
     <div class="col-md-12">
+        <h1>Welcome,
+        <?php
+        echo($_POST)["name"]
+        ?></h1>
+        <p>The next five leap years this will be your age:</p>
+
+
         <form action="leapyear.php" method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
