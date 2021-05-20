@@ -15,16 +15,15 @@ include __DIR__ . '/tpl/body_start.php';
 ?>
 <div class="row">
     <div class="col-md-12">
-        <h1>Welcome
-        <?php
-        echo($_GET)["name"]);
-        ?></h1>
+        <h1>Welcome <?php
+            echo($_GET["name"]);
+        ?>!</h1>
         <?php
         if (strtoupper($_GET["residence"]) === "AMSTERDAM"){
             echo("You're from the capital of the Netherlands!");
         }
         else {
-            echo("You're from" $_GET["residence"]) "!")
+            echo("You're from " . $_GET["residence"] .  "!");
         }
         ?>
         <form action="simple_form.php" method="get">
