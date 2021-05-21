@@ -13,6 +13,7 @@ $navigation = Array(
 include __DIR__ . '/tpl/head.php';
 include __DIR__ . '/tpl/body_start.php';
 ?>
+    <script type="text/javascript" src="scripts/leapyear.js"></script>
 <div class="row">
     <div class="col-md-12">
         <h1>Welcome,
@@ -63,7 +64,7 @@ include __DIR__ . '/tpl/body_start.php';
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name"
-                       name="name" placeholder="Donald Trump" required>
+                       name="name" placeholder="Your name" required>
                 <div class="invalid-feedback">
                     Please enter your correct name
                 </div>
@@ -74,7 +75,7 @@ include __DIR__ . '/tpl/body_start.php';
             <div class="form-group">
                 <label for="age">Age</label>
                 <input type="number" class="form-control" id="age"
-                       name="age" placeholder="69" required>
+                       name="age" placeholder="age is just a number" required>
                 <div class="invalid-feedback">
                     Please enter your age in numbers
                 </div>
@@ -96,7 +97,7 @@ include __DIR__ . '/tpl/body_start.php';
             <div class="form-group">
                 <label for="residence">Residence</label>
                 <input type="text" class="form-control" id="residence"
-                       name="residence" placeholder="Groningen" required>
+                       name="residence" placeholder="Where are you from?" required>
                 <div class="invalid-feedback">
                     Enter a valid residence
                 </div>

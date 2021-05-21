@@ -30,12 +30,12 @@ include __DIR__ . '/tpl/body_start.php';
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name"
-                       name="name" placeholder="Donald Trump"
+                       name="name" placeholder="Your name"
             </div>
             <div class="form-group">
                 <label for="residence">Residence</label>
                 <input type="text" class="form-control" id="residence"
-                       name="residence" placeholder="Groningen"
+                       name="residence" placeholder="Where are you?"
             </div>
             <button type="submit" class="btn btn-default"> SUBMIT</button>
         </form>
