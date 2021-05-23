@@ -1,3 +1,11 @@
+function removeArticle(rm_btn) {
+    let article_id = $(rm_btn).data('article-id');
+    let rm_article = $.post("scripts/news_remove.php", {article_id: article_id});
+    rm_article.done(function (data) {
+        print_latest_news();
+    });
+}
+
 function print_latest_news() {
     let articles_html = $.post("scripts/read_latest_news.php", {call_now: "True"});
     let news_container = $('#news_container');
@@ -7,17 +15,6 @@ function print_latest_news() {
         $('.article_remove').click(function () {
             removeArticle(this);
         });
-        $('.article_edit').click(function () {
-            editArticle(this);
-    });
-}}
-
-function removeArticle(rm_btn) {
-    let article_id = $(rm_btn).data('article-id');
-    let rm_article = $.post("scripts/news_remove.php", {article_id: article_id});
-    rm_article.done(function (data) {
-        print_latest_news();
-        console.log('avond');
     });
 }
 
