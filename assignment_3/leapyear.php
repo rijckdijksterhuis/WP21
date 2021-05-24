@@ -2,7 +2,7 @@
 /* Header */
 $page_title = 'Webprogramming Assignment 3';
 $navigation = Array(
-    'active' => 'Simple Form',
+    'active' => 'Leap Year',
     'items' => Array(
         'News' => '/WP21/assignment_3/index.php',
         'Add news item' => '/WP21/assignment_3/news_add.php',
@@ -64,7 +64,7 @@ include __DIR__ . '/tpl/body_start.php';
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name"
-                       name="name" placeholder="Your name" required>
+                       name="name" required>
                 <div class="invalid-feedback">
                     Please enter your correct name
                 </div>
