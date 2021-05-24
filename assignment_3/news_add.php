@@ -2,7 +2,7 @@
 /* Header */
 $page_title = 'Webprogramming Assignment 3';
 $navigation = Array(
-    'active' => 'News',
+    'active' => 'Add news item',
     'items' => Array(
         'News' => '/WP21/assignment_3/index.php',
         'Add news item' => '/WP21/assignment_3/news_add.php',
