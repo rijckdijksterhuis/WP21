@@ -64,7 +64,7 @@ include __DIR__ . '/tpl/body_start.php';
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name"
-                       name="name" required>
+                       name="name" placeholder="What is your name?" required>
                 <div class="invalid-feedback">
                     Please enter your correct name
                 </div>
@@ -75,7 +75,7 @@ include __DIR__ . '/tpl/body_start.php';
             <div class="form-group">
                 <label for="age">Age</label>
                 <input type="number" class="form-control" id="age"
-                       name="age" placeholder="age is just a number" required>
+                       name="age" placeholder="Age is just a number" required>
                 <div class="invalid-feedback">
                     Please enter your age in numbers
                 </div>
